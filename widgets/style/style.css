@@ -1,4 +1,9 @@
 @import url(Fonts.css);
+
+* {
+    box-sizing: border-box;
+}
+
 h1{
     text-align: center;
     font-family: "Poppins Medium";
@@ -15,24 +20,32 @@ h1{
 }
 
 .widgets{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
-    width: 150px;
-    position: relative;
-    overflow:hidden;
+    width: 184px;
+    height: 150;
     padding: 15px;
+    font-family: "Poppins Regular";
+    position: relative;
 }
 
-.widgets h3{
+.widgets h3 .widgets p{
     margin: 10px 0 5px;
-    font-family: "Poppins Regular";
 }
 
 .widgets p{
-    font-family: "Poppins semibold";
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    color: #BDBDBD;
 }
+
+.details{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+    font-family: "Poppins semibold";
+}
+
